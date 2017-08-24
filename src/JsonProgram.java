@@ -17,8 +17,9 @@ public class JsonProgram {
 		surname = obj.getString("surname");
 		
 		JSONArray array = (JSONArray)obj.get("phone");
+		System.out.println(array.length());
 		
-		for(int i=0; i<array.length(); i++) {
+/*		for(int i=0; i<array.length(); i++) {
 //			String _phone = (String)array.get(i);
 			String _phone = array.getString(i);
 			phone.add(_phone);
@@ -27,7 +28,7 @@ public class JsonProgram {
 		System.out.println(firstname);
 		System.out.println(surname);
 		System.out.println(phone.get(0));
-		System.out.println(phone.get(1));
+		System.out.println(phone.get(1));*/
 
 	}
 
